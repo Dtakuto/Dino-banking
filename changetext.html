@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="logo-container">
+                <a href="homeIcon.png">
+                        <img class="logo" src="homeIcon.png" alt="Logo">
+                </a>
+	</div>  
+    <h1 id="title">Welcome!</h1>
+    
+    <form>
+        <h1 id="text">Please adjust settings <br>to your needs</h1>
+        <br>
+        <br>
+        <input type="range" min="0" max="78" value="78" step="1" id="slider" class="slider" >
+    </form>
+
+    <br>
+    <input id="Save" type="submit" value="Save" onclick="saveColor()">
+    <input id="submit" type="submit" value="submit" onclick="window.location.href='text_speech.html'">
+
+    
+        
+    <script src="colorchange.js"></script>
+<script>
+    function saveColor() {
+                var colorValue = document.getElementById("text").style.color
+                // Code to save the color value goes here
+            }
+        // Your JavaScript code here
+        </script>
+    
+</body>
+</html>
